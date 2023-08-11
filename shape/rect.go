@@ -1,5 +1,7 @@
 package shape
 
+import "fmt"
+
 type Rect struct {
 	L, B float32
 }
@@ -12,4 +14,8 @@ func (r *Rect) Area() float32 {
 // Function : Function does not contain a receiver
 func AreaOf(r *Rect) float32 {
 	return r.L * r.B
+}
+
+func (r *Rect) Display() {
+	fmt.Println("Rect type object")
 }
